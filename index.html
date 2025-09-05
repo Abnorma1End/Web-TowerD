@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Rogue-TD (Starter)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div id="hud">
+    <div class="row">
+        <button id="btn-reroll" title="R">Reroll</button>
+        <button id="btn-start"  title="Space">Start Wave</button>
+        <button id="btn-pause"  title="P">Pause</button>
+        <button id="btn-speed-" title="Z">– Speed</button>
+        <button id="btn-speed+" title="X">+ Speed</button>
+        <span id="stats"></span>
+    </div>
+
+
+    <div class="row tiny">
+        WASD / Middle or Right drag to pan · Wheel to zoom · Click to place tower (cost 25).
+    </div>
+</div>
+
+
+
+<div id="stage">
+    <canvas id="game"></canvas>
+</div>
+
+<!-- floating tooltip -->
+<div id="tooltip" class="tooltip" hidden></div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
